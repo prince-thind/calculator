@@ -10,7 +10,6 @@ let displayNumber = "";
 let oldNumber = 0;
 let operator = null;
 
-
 numberDivs.forEach((button) => {
   button.addEventListener("click", () => {
     appendNumber(button.innerText);
@@ -40,9 +39,6 @@ deleteDiv.addEventListener("click", () => {
   display();
 });
 
-
-
-
 function display() {
   currentField.textContent = displayNumber;
   if (operator) {
@@ -56,12 +52,10 @@ function reset() {
   displayNumber = "";
   oldNumber = 0;
   operator = null;
-  
 }
 
 function backspace() {
   displayNumber = displayNumber.toString().slice(0, -1);
-  
 }
 
 function appendNumber(number) {
@@ -85,7 +79,6 @@ function compute() {
   const current = parseFloat(displayNumber);
 
   if (isNaN(prev) || isNaN(current)) return;
-
 
   switch (operator) {
     case "+":
