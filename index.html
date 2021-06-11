@@ -10,31 +10,35 @@
     </header>
     <main class="main">
       <div class="calc">
-        <div class="display">0</div>
+        <div class="display">
+          <div class="previous" data-previous-operand></div>
+          <div class="current" data-current-operand></div>
+        </div>
         <div class="surface">
           <div class="brand">ABCD-EX1252</div>
           <div class="solar-screen"></div>
         </div>
         <div class="main-keys">
-          <div class="k-clear key">AC</div>
-          <div class="k-divide key">/</div>
-          <div class="k-multiply key">*</div>
-          <div class="k-subtract key">-</div>
+          <div class="key" data-all-clear>AC</div>
+          <div class="key" data-operation>/</div>
+          <div class="key" data-operation>*</div>
+          <div class="key" data-operation>-</div>
           <div class="num-keys">
-            <div class="k-seven key">7</div>
-            <div class="k-eight key">8</div>
-            <div class="k-nine key">9</div>
-            <div class="k-four key">4</div>
-            <div class="k-five key">5</div>
-            <div class="k-six key">6</div>
-            <div class="k-one key">1</div>
-            <div class="k-two key">2</div>
-            <div class="k-three key">3</div>
+            <div class="key" data-number>7</div>
+            <div class="key" data-number>8</div>
+            <div class="key" data-number>9</div>
+            <div class="key" data-number>4</div>
+            <div class="key" data-number>5</div>
+            <div class="key" data-number>6</div>
+            <div class="key" data-number>1</div>
+            <div class="key" data-number>2</div>
+            <div class="key" data-number>3</div>
           </div>
-          <div class="k-plus key">+</div>
-          <div class="k-zero key">0</div>
-          <div class="k-dot key">.</div>
-          <div class="k-enter key">enter</div>
+          <div class="k-delete key" data-delete>DEL</div>
+          <div class="k-plus key" data-operation>+</div>
+          <div class="k-zero key" data-number>0</div>
+          <div class="k-dot key" data-number>.</div>
+          <div class="k-enter key" data-equals>enter</div>
         </div>
       </div>
     </main>
