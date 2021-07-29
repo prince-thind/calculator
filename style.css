@@ -9,13 +9,11 @@ body {
 }
 .heading {
   background-color: rgb(24, 87, 24);
-  padding: 1rem;
+  padding: 0.5rem;
   margin-bottom: 2rem;
 }
-
 .calc {
   width: 30vw;
-  min-width: 25rem;
   margin: 0 auto 3rem auto;
   background-color: gray;
   border: 3px solid black;
@@ -37,13 +35,13 @@ body {
   padding: 0.3rem;
   min-height: 2rem;
   opacity: 0.5;
-  word-break:break-all;
+  word-break: break-all;
   word-wrap: break-word;
 }
 .current {
   padding: 0.3rem;
   min-height: 2rem;
-  word-break:break-all;
+  word-break: break-all;
   word-wrap: break-word;
 }
 .surface {
@@ -68,17 +66,17 @@ body {
 .main-keys {
   display: grid;
   grid-template-areas:
-    "AC divide multiply delete"
-    "main main main subtract"
-    "main main main plus"
-    "main main main enter"
-    "zero zero dot enter";
+    'AC divide multiply delete'
+    'main main main subtract'
+    'main main main plus'
+    'main main main enter'
+    'zero zero dot enter';
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
-.k-delete{
-  grid-area:delete;
+.k-delete {
+  grid-area: delete;
   background-color: rgb(66, 0, 0) !important;
 }
 .k-clear {
@@ -121,4 +119,14 @@ body {
 .key:hover {
   background-color: black;
   transform: scale(1.1);
+}
+
+
+@media only screen and (max-width:760px) {
+  .calc {
+    width: 75vw;
+  }
+  .key{
+    padding:0.5rem;
+  }
 }
